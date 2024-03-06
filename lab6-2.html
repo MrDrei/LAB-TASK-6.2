@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Task 6-2</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Product+Sans&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Product Sans', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 700px; 
+            margin: 100px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .input-container {
+            margin-bottom: 5px;
+        }
+
+        .input-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-container input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .formgen {
+            margin: 40px auto; 
+            max-width: 400px; 
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center; 
+        }
+
+        .formgen2 {
+            margin-top: 40px;
+        }
+
+        .formgen input,
+        .formgen2 input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+
+        .btnform{
+            padding: 30px 60px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: #4285f4;
+            color: #fff;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }        
+        .schedbtn {
+            padding: 30px 60px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: white;
+            color:black;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .reqbtn {
+    padding: 30px 60px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #000; 
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.reqbtn:hover {
+    background-color: #357ae8;
+}
+
+        .btnform:hover,
+        .reqbtn:hover,
+        .schedbtn:hover {
+            background-color: #357ae8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="formgen">
+            <input type="text" id="first" placeholder="First name" class="form1"/>
+            <input type="text" id="first1" placeholder="Last name" class="form1" />
+            <input type="text" id="email1" placeholder="Email" class="email1">
+            <button class="btnform">Sign Up</button>
+        </div>
+        <br>
+
+        <h1>Request A Ride Now</h1>
+        <div class="formgen2"> 
+            <input type="text" id="location" placeholder="Enter pickup location" class="loc">
+            <input type="text" id="destination" placeholder="Enter destination" class="loc">
+            <button class="reqbtn">Request now</button>
+            <button class="schedbtn">Schedule for later</button>
+        </div>
+    </div>
+</body>
+</html>
